@@ -1,0 +1,19 @@
+enter password
+<input type="password" name="password" id="password" />
+<input type="button" name="sumbit" value="Submit" />
+
+<script>
+   var psswd = document.getElementsByName("password").value
+   var sumbit = document.getElementsByName("sumbit")
+   var pssdw = "password"
+   //when you click button check if password is correct
+    sumbit.onclick = function() {
+        if (psswd.value == psswd) {
+            //if correct, go to next page
+            window.location.href = "index3.html"
+        } else {
+            //if not correct, alert user
+            alert("Incorrect password")
+        }
+    }
+</script>
